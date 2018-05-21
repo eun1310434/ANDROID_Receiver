@@ -1,9 +1,16 @@
-/**
- * 05.03.2018
- * eun1310434@naver.com
- * https://blog.naver.com/eun1310434
- * 참고) Do it android programming
- */
+/*=====================================================================
+□ Infomation
+  ○ Data : 21.05.2018
+  ○ Mail : eun1310434@naver.com
+  ○ Blog : https://blog.naver.com/eun1310434
+  ○ Reference : Do it android app Programming
+
+□ Function
+  ○
+
+□ Study
+  ○
+=====================================================================*/
 
 package com.eun1310434.receiver;
 
