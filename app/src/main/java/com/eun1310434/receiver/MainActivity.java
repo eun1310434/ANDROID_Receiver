@@ -8,7 +8,7 @@
      - Hello JAVA Programming
      - http://itmining.tistory.com/5
 
-□ Study
+□ STUDY
   ○ BroadcastReceiver
      - Android apps can send or receive broadcast messages from the Android system and other Android apps, similar to the publish-subscribe design pattern.
        These broadcasts are sent when an event of interest occurs.
@@ -16,7 +16,7 @@
        such as when the system boots up or the device starts charging.
        Apps can also send custom broadcasts,
 
-□ Function
+□ FUNCTION
   ○
 =====================================================================*/
 
