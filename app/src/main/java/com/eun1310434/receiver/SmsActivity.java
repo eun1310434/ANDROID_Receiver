@@ -1,9 +1,24 @@
-/**
- * 05.03.2018
- * eun1310434@naver.com
- * https://blog.naver.com/eun1310434
- * 참고) Do it android programming
- */
+/*=====================================================================
+□ INFORMATION
+  ○ Data : 23.05.2018
+  ○ Mail : eun1310434@naver.com
+  ○ Blog : https://blog.naver.com/eun1310434
+  ○ Reference
+     - Do it android app Programming
+     - Hello JAVA Programming
+     - http://itmining.tistory.com/5
+
+□ Study
+  ○ BroadcastReceiver
+     - Android apps can send or receive broadcast messages from the Android system and other Android apps, similar to the publish-subscribe design pattern.
+       These broadcasts are sent when an event of interest occurs.
+     - For example, the Android system sends broadcasts when various system events occur,
+       such as when the system boots up or the device starts charging.
+       Apps can also send custom broadcasts,
+
+□ Function
+  ○
+=====================================================================*/
 
 package com.eun1310434.receiver;
 
