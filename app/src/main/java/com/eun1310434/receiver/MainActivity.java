@@ -37,7 +37,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     //sms message receive
     public static final int REQUEST_CODE_SMS = 201;
-    TextView tv_Log;
+    private TextView tv_Log;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

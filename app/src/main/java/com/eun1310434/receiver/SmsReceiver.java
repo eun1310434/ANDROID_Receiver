@@ -58,14 +58,11 @@ public class SmsReceiver extends BroadcastReceiver {
 
             sendToActivity(context, sender, contents, receivedDate);
         }
-
     }
 
 
     private SmsMessage[] parseSmsMessage(Bundle bundle) {//SMS 메시지 파싱
-
         Object[] objs = (Object[]) bundle.get("pdus");// 국제표준 토콜 : pdus
-
         SmsMessage[] messages = new SmsMessage[objs.length];
         for (int i = 0; i < objs.length; i++) {
             // PDU 포맷 - 메시지 복원
@@ -73,7 +70,6 @@ public class SmsReceiver extends BroadcastReceiver {
                 // API 23 이상 시 format Setting 필요
                 String format = bundle.getString("format");
                 messages[i] = SmsMessage.createFromPdu((byte[]) objs[i], format);
-
             } else {
                 messages[i] = SmsMessage.createFromPdu((byte[]) objs[i]);
             }
@@ -83,16 +79,13 @@ public class SmsReceiver extends BroadcastReceiver {
 
     private void sendToActivity(Context context, String sender, String contents, Date receivedDate) {
         Intent myIntent = new Intent(context, SmsActivity.class);
-
         myIntent.addFlags(
                 Intent.FLAG_ACTIVITY_NEW_TASK|
                 Intent.FLAG_ACTIVITY_SINGLE_TOP|
                 Intent.FLAG_ACTIVITY_CLEAR_TOP);
-
         myIntent.putExtra("sender", sender);
         myIntent.putExtra("contents", contents);
         myIntent.putExtra("receivedDate", format.format(receivedDate));
-
         context.startActivity(myIntent);
     }
 
